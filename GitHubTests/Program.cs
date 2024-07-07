@@ -24,6 +24,9 @@ app.UseStaticFiles();
 //    name: "default",
 //    pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// Ётот метод используетс€ дл€ определени€ обработчика запросов.
+// ¬ данном случае это л€мбда-выражение, которое принимает параметр context типа HttpContext.
+// HttpContext содержит информацию о текущем HTTP-запросе и позвол€ет управл€ть HTTP-ответом
 app.Run(async(context)=>
 {
     string exampleFolder = "html";
